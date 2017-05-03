@@ -1,0 +1,7 @@
+<h3 class="indigo-text red lighten-4 center-align">Questions</h3>
+
+{{#each model as |question|}}
+  {{#link-to 'question' question.id}}{{question-popularity question}}{{question-card question=question}}{{/link-to}}
+{{/each}}
+
+{{new-question saveQuestion="saveQuestion"}} {{display-favorites}}

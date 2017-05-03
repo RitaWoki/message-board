@@ -1,0 +1,6 @@
+<h2>favorites:</h2>
+<ol>
+  {{#each quizFavorite.items as |question|}}
+    {{#link-to 'question' question.id}}<h4>- {{question.content}}This  is one of your favorites.</h4>{{/link-to}}
+  {{/each}}
+</ol>

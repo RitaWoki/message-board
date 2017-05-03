@@ -1,0 +1,11 @@
+<li class="collection-item avatar">
+  <span class="title indigo-text text-lighten-2">{{answer.author}}</span>
+  <p>{{answer.content}}</p>
+  {{#if updateAnswerForm}}
+    {{answer-edit answer=answer updateAnswer="updateAnswer"}}
+  {{/if}}
+  <a class="secondary-content">
+    <button class="btn indigo" {{action 'showUpdateAnswerForm'}}>mode_edit</button>
+    <button class="btn indigo" {{action 'deleteAnswer' answer}}>delete</button>
+  </a>
+</li>

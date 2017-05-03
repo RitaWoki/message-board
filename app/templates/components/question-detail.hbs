@@ -1,0 +1,7 @@
+{{#link-to 'question' question}}
+<h3 class="indigo-text text-darken-2">{{question.content}}</h3>
+<h6 class="blue-text text-accent-1">by {{question.author}}</h6>
+<p><span class="indigo-text text-darken-4">NOTES</span><br>{{question.notes}}</p>
+
+<button {{action 'addToFavs' question}} class="btn-add"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> Favorite</button>
+{{/link-to}}
